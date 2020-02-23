@@ -9,6 +9,8 @@ venv:
 
 ACTIVATE=[[ -e venv/bin/activate ]] && source venv/bin/activate;
 
-
 install:
 	${ACTIVATE} python setup.py install
+
+test:
+	${ACTIVATE} python -c"from litex.data.cpu.lm32 import version; print(version)"
