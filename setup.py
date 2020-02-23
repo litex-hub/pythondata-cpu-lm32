@@ -3,11 +3,11 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-from litex.data.cpu.lm32 import version
+from litex.data.cpu.lm32 import version_str
 
 setuptools.setup(
     name="litex-data-cpu-lm32",
-    version=version,
+    version=version_str,
     author="LiteX Authors",
     author_email="litex@googlegroups.com",
     description="Python module containing data files for using the LatticeMico32 cpu with LiteX.",
