@@ -22,6 +22,6 @@ setuptools.setup(
     python_requires='>=3.5',
     zip_safe=False,
     packages=setuptools.find_packages(),
-    package_data={'litex.data.cpu.lm32': ['litex/data/cpu/lm32/verilog/*']},
+    package_data={'litex.data.cpu.lm32': ['litex/data/cpu/lm32/verilog/**']},
 
 )
