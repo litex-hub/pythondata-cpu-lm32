@@ -14,7 +14,6 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/litex-hub/litex-data-cpu-lm32",
-    packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
@@ -22,4 +21,7 @@ setuptools.setup(
     ],
     python_requires='>=3.5',
     zip_safe=False,
+    packages=setuptools.find_packages(),
+    package_data={'litex.data.cpu.lm32': ['litex/data/cpu/lm32/verilog/*']},
+
 )
