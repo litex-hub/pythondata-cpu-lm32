@@ -13,4 +13,4 @@ install:
 	${ACTIVATE} python setup.py install
 
 test:
-	${ACTIVATE} python -c"from litex.data.cpu.lm32 import version; print(version)"
+	${ACTIVATE} python -c"from litex.data.cpu.lm32 import data_location; print(data_location)"
