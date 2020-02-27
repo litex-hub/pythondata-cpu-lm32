@@ -16,9 +16,12 @@ with open(os.path.join(litex.data.cpu.lm32.location, my_data_file)) as f:
     print(f.read())
 ```
 
+
 The data files come from https://github.com/m-labs/lm32.git
 and are imported using `git subtrees` to the directory
 [litex/data/cpu/lm32/verilog](litex/data/cpu/lm32/verilog].
+
+
 
 ## Installing
 
