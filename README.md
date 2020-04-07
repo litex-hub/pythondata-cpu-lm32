@@ -5,14 +5,24 @@ Non-Python data files required to use the lm32 with
 
 The data files can be found under the Python module `litex.data.cpu.lm32`. The
 `litex.data.cpu.lm32.location` value can be used to find the files on the file system.
-For example;
 
+Example of getting the data file directly;
 ```python
 import litex.data.cpu.lm32
 
 my_data_file = "abc.txt"
 
-with open(os.path.join(litex.data.cpu.lm32.location, my_data_file)) as f:
+with open(os.path.join(litex.data.cpu.lm32.data_location, my_data_file)) as f:
+    print(f.read())
+```
+
+Example of getting the data file using `litex.data.find` API;
+```python
+from litex.data.find import find_data
+
+my_data_file = "abc.txt"
+
+with open(os.path.join(find_data("cpu", "lm32"), my_data_file)) as f:
     print(f.read())
 ```
 
