@@ -4,11 +4,11 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/m-labs/lm32.git"
 
 # Module version
-version_str = "0.0.post195"
-version_tuple = (0, 0, 195)
+version_str = "0.0.post197"
+version_tuple = (0, 0, 197)
 try:
     from packaging.version import Version as V
-    pversion = V("0.0.post195")
+    pversion = V("0.0.post197")
 except ImportError:
     pass
 
@@ -37,11 +37,11 @@ Date:   Fri Oct 10 18:52:34 2014 +0200
 """
 
 # Tool version info
-tool_version_str = "0.0.post138"
-tool_version_tuple = (0, 0, 138)
+tool_version_str = "0.0.post140"
+tool_version_tuple = (0, 0, 140)
 try:
     from packaging.version import Version as V
-    ptool_version = V("0.0.post138")
+    ptool_version = V("0.0.post140")
 except ImportError:
     pass
 
